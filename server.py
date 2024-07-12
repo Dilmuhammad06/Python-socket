@@ -1,7 +1,7 @@
 import socket
 
 s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-s.bind((socket.gethostname(),12343))
+s.bind(("127.0.0.1",12343)) # use socket.gethostname() to use in local network
 s.listen(5)
 
 while True:
